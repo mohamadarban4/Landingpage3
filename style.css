@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#main img{
+    height: 600px;
+    width: 425px;
+    position: relative;
+    z-index: 99;
+    object-fit: cover;
+}
+#brd{
+    position: absolute;
+    font-size: 24px;
+    top: 85%;
+    right: 5%;
+    text-transform: uppercase;
+    font-family: 'gilroy';
+    color: orange;
+    /* text-shadow: 1px solid black; */
+
+}
+#mn{
+    position: absolute;
+    font-size: 14px;
+    top: 1.5%;
+    right: 5%;
+    font-family: "gilroy";
+    padding: 18px;
+}
+#pv{
+    font-size: 13px;
+    font-family: "gilroy";
+    color: orange;
+    position: absolute;
+    top: 13%;
+    left: 3%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#vp{
+    font-size: 13px;
+    font-family: "gilroy";
+    color:black;
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#menu{
+    height: 10%;
+    width: 25%;
+    left: 45%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 1.5%;
+    /* background-color: #000; */
+}
+#lol{
+    position: absolute;
+    width: 300px;
+    font-size: 13px;
+    top: 80%;
+    left: 3%;
+    font-family: "gilroy";
+    text-transform: uppercase;
+}
+#menu h4{
+    left: 50%;
+    padding: 18px;
+    font-size: 14px;
+    font-family: "gilroy";
+    color: orange;
+    text-transform: uppercase;
+}
+#scrolldiv{
+    position: absolute;
+    top: 23%;
+    width: 100%;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scrolldiv::-webkit-scrollbar{
+    display: none;
+}
+#scrolldiv h1{
+    display: inline-block;
+    font-size: 110px;
+    font-family: 'monument Extended';
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 4px;
+    animation-name: scroll;
+    animation-duration: 2.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#scrolldiv2{
+    position: absolute;
+    top: 43%;
+    width: 100%;
+    z-index: 100;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scrolldiv2::-webkit-scrollbar{
+    display: none;
+}
+#scrolldiv2 h1{
+    display: inline-block;
+    font-size: 110px;
+    font-family: 'monument Extended';
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 4px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    animation-name: scroll;
+    animation-duration: 3.4s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#scrolldiv3{
+    position: absolute;
+    top: 63%;
+    width: 100%;
+    /* height: 100px; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scrolldiv3::-webkit-scrollbar{
+    display: none;
+}
+#scrolldiv3 h1{
+    display: inline-block;
+    font-size: 110px;
+    font-family: 'monument Extended';
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 4px;
+    animation-name: scroll;
+    animation-duration: 2.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#text{
+    position:absolute;
+    font-size: 18px;
+    font-family: 'monument extended';
+    width: 60%;
+    /* background-color: rebeccapurple; */
+    z-index: 999;
+    top: 15%;
+    text-transform: uppercase;
+    text-align: center;
+}
+@keyframes scroll {
+    0%{
+        
+        transform: translateX(calc(-100% - 32px));
+    }
+    100%{
+        transform: translateX(0);
+        
+    }
+}
